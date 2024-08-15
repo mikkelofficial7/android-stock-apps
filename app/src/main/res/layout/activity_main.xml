@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_chart"
+        android:drawablePadding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/find_best_stock"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/gray_8c8c8c"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/default_edittext_search_height"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textCapCharacters"
+                app:iconifiedByDefault="false"
+                android:layout_marginEnd="6dp"
+                android:hint="@string/search_here"
+                android:imeOptions="actionDone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSearch"
+                android:layout_width="@dimen/default_btn_search_width"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_search"
+                app:cornerRadius="10dp"
+                android:layout_marginEnd="3dp"
+                app:backgroundTint="@color/gray_595959">
+
+            </com.google.android.material.button.MaterialButton>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/layout_empty"
+        layout="@layout/layout_empty_search"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        tools:visibility="gone"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/cardViewSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/layout_find"
+        layout="@layout/layout_search_found"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        tools:visibility="visible"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/cardViewSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

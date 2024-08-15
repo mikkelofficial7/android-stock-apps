@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_headline"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_headline"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_data_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_headline"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_data_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_data_1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_data_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_data_2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_data_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_data_3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_4"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_data_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_data_4"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_5"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_data_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_data_5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_data_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_data_6"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title_7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    tools:text="This is title"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content_7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    tools:text="This is content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollViewGraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/layout_data_7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.github.AAChartModel.AAChartCore.AAChartCreator.AAChartView
+                    android:id="@+id/stockGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp" />
+
+            </HorizontalScrollView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_footer_right"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="italic"
+                tools:text="@string/datetime_vary"
+                app:layout_constraintTop_toBottomOf="@id/scrollViewGraph"
+                app:layout_constraintEnd_toEndOf="@id/scrollViewGraph"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="SmallSp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

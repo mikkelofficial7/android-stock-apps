@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SimpleStockApp" parent="Theme.Material3.DayNight.NoActionBar">
+         <item name="colorPrimary">@color/gray_8c8c8c</item>
+    </style>
+
+    <style name="Theme.SimpleStockApp" parent="Base.Theme.SimpleStockApp" />
+</resources>

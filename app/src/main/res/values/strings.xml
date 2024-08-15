@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Simple Stock App</string>
+    <string name="find_best_stock">Find the best stock in the market here</string>
+    <string name="search_here">Search here…</string>
+    <string name="search_not_found">Oops your search is not found.\nWould you try other keywords?</string>
+    <string name="fetch_data">Fetching data…</string>
+    <string name="datetime_vary">* This data is a range vary from %1$s to %2$s</string>
+    <string name="stock_symbol">Stock Symbol</string>
+    <string name="instrument_type">Instrument type</string>
+    <string name="common_string">%1$s %2$s</string>
+    <string name="regular_market_low">Regular market price (low)</string>
+    <string name="regular_market_normal">Regular market price (normal)</string>
+    <string name="regular_market_high">Regular market price (high)</string>
+    <string name="date_first_trade">Date of first trade</string>
+    <string name="date_regular_market">Date of regular market</string>
+    <string name="chart_of">Chart of %1$s</string>
+    <string name="price_on_market">Price on market: %1$s</string>
+</resources>
